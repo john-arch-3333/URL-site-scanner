@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Security Scanner</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .status {
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 4px;
+    }
+    .safe {
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+    .warning {
+      background-color: #fcf8e3;
+      color: #8a6d3b;
+    }
+    .danger {
+      background-color: #f2dede;
+      color: #a94442;
+    }
+    .loading {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="result">
+    <div class="loading">Scanning site...</div>
+  </div>
+  <div id="resource-results">
+    <h3>Loaded Resources</h3>
+    <div id="resources"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

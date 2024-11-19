@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Site Security Scanner",
+    "version": "1.0",
+    "description": "Scans active tabs and resources using VirusTotal API",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>",
+      "https://www.virustotal.com/*"
+    ],
+    "browser_action": {
+      "default_icon": "cyber-security.png",
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "icons": {
+      "48": "cyber-security.png",
+      "128": "cyber-security.png"
+    }
+  }
